@@ -27,7 +27,7 @@
                 <ul class="menu__items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Features.html">Features</a></li>
-                    <li><a href="About us.html">About Us</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
                     <li><a href="Testimonials.html">Testimonials</a></li>
                     <li><a href="Blog.html">Blog</a></li>
                     <li><a href="Contact.html">Contact</a></li>
@@ -38,29 +38,35 @@
     <!-- blocco content largo 700px-->
    <div id="graybg">
         <div class="blocco_contact">
-        <h2>Get in touch</h2>
+        <h2>Get in Touch</h2>
             <div class="form_container">
                 <form action="/action-page.php" method="GET" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
                     <fieldset class="fildset">
                         <!-- Nome e cognome (input text) -->
                         <p>Contact Form</p>
-                        <div class="name_surname">
-                        <label for="fname">First Name</label><br>
-                        <input type="text" id="fname" name="nome"><br>
-                        <label for="lname">Last Name</label><br>
-                        <input type="text" id="lname" name="cognome"><br>
-                        </div>
+                        <div class="data">
+                            <div class="row_group">
+                                <div id="group1">
+                                    <label for="fname">First Name</label><br>
+                                    <input type="text" id="fname" name="nome">
+                                </div>
+                                <div id="group2">
+                                    <label for="lname">Last Name</label><br>
+                                    <input type="text" id="lname" name="cognome">
+                                </div>  
+                            </div>
                         <!-- Email (input text) -->
                         <label for="email">Email</label><br>
-                        <input type="text" id="email" name="mail"><br>
+                        <input type="text" id="email" name="mail">
                         <!-- Subject (input text) -->
                         <label for="subject">Subject</label><br>
-                        <input type="text" id="subject" name="sj"><br>
+                        <input type="text" id="subject" name="sj">
                         <!-- Message (input text) -->
-                        <label for="subject">Message</label><br>
-                        <input type="text" id="subject" name="sj" placeholder="Write note or questions here..."><br>
-                        <button class="button">Learn more</button>
+                        <label for="msg">Message</label><br>
+                        <textarea class="msgbox" id="msg" rows="8" cols="20" name="message">Write note or questions here...</textarea>
+                        <!-- button (input submit) -->
                         <input type="submit" value="Send Message">
+                        </div>
                     </fieldset>
                 </form>  
             </div>

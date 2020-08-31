@@ -22,7 +22,6 @@ nav {
 position:fixed;
 top:60px;
 width:100%;
-/*padding-right:20px;*/
 }
  
 nav .menu {
@@ -51,11 +50,9 @@ color:#00d2b5 ;
 }
  
 div.sticky {
-/*position: -webkit-sticky;*/
 position: sticky;
 top: 0;
 background-color: white;
-/*padding: 50px;*/
 font-size: 20px;
 }
  
@@ -68,10 +65,6 @@ text-align: center;
 padding-bottom: 20px;
 }
  
-
-/*.section__content {
-  display: inline-block;
-}*/
  
 .content {
 max-width:950px;
@@ -91,13 +84,6 @@ width:100%;
 }
 
 
-
-
- /*.sections > div {*/
- /*    display: block;*/
- /*    width: 100%;*/
- /*}*/
- 
 .sections > #section-left {
 float: left;
 width: 50%;
@@ -111,8 +97,7 @@ width: 50%;
  
 h1 {
 font-size: 3.5rem;
-font-weight: 6000;
-color: black;
+font-weight: bolder;
 }
 
 p {
@@ -123,8 +108,7 @@ font-weight: 300;
 
 h2 {
 text-align: center;
-color: black;
-font-weight: 800;
+font-weight: bolder;
 }
 
 .quotes {
@@ -137,16 +121,11 @@ font-weight: 700;
  
 .copertina {
 height: auto;
-/*width: 100%;*/
 }
- 
- /*#container{width:100%;}*/
- /*#left{float:left;width:100px;}*/
- /*#right{float:right;width:100px;}*/
- /*#center{margin:0 auto;width:100px;}*/
  
  
 .button {
+margin-top: 40px;
 border: none;
 border-radius: 40px;
 background-color:#00d2b5;
@@ -164,7 +143,6 @@ transition-duration: 0.4s;
 background-color: grey; 
 color: white;
 border: none;
- /*border-radius: 15%;*/
 }
  
 .blocco_features {
@@ -179,24 +157,22 @@ margin: 0 auto;
 margin-top: 170px;
 }
 
-.blocco_testimonials  {
+.blocco_testimonials {
 max-width: 800px;
 margin: 0 auto; 
 margin-top: 170px; 
 padding-left: 40px;
 }
 
-.blocco_blog{
+.blocco_blog {
 max-width: 1100px;
 margin: 0 auto;
 margin-top: 170px;
 }
 
-/*#gray_background {
-position:fixed;
-top:0px;
-width:100%;
-}*/
+.container_blog h2 {
+font-weight: lighter;
+}
 
 
 #graybg {
@@ -216,6 +192,10 @@ text-align: center;
 
 .container_features {
 text-align: center;
+}
+
+.feature h4 {
+font-weight: lighter;
 }
   
 
@@ -255,7 +235,7 @@ vertical-align: middle;
 padding-top: 13px;
 }
 
-.test a {
+.in_depth a {
 font-weight:normal;
 text-decoration: none;
 color: #00d2b5;
@@ -431,7 +411,7 @@ left: -1340px;
 }
 
 #slider-image-4:target ~ .image-container {
-left: -2010x;
+left: -2010px;
 }
 
 .button-container {
@@ -456,14 +436,14 @@ background-color: #00d2b5;
 
 .centered{
 position: absolute;
-top: 50%;
+top: 70%;
 left: 50%;
 transform: translate(-50%, -50%);
 color: grey;
 }
 
 .container_blog{
-max-width:1100px;
+max-width:1200px;
 margin: 0 auto;
 margin-top: 40px;
 text-align: center;
@@ -472,9 +452,13 @@ text-align: center;
 
 .post {
 display: inline-block;
-width: 28%;
+width: 30%;
 margin-bottom: 15px;
 margin-right: 15px;
+text-align: left;
+}
+
+.post p {
 text-align: left;
 }
 
@@ -487,7 +471,7 @@ text-align: left;
 width: 100%
 }
 
-.post-details {
+.post-details{
 font-size: small;
 color: #a09e9e;
 text-decoration: none;
@@ -495,13 +479,13 @@ text-decoration: none;
 
 .post-details a {
 font-size: small;
-color: #a09e9e;
+color: #00d2b5;
 text-decoration: none;
 }
 
 
 .post-details a:hover {
-color: #00d2b5; ;
+color: #a09e9e ;
 }
 
 .dot {
@@ -537,6 +521,80 @@ padding-left: 1.75em;
 padding-right: 1.75em;
 }
 
-.name_surname{
-display:inline block ;
+
+.fildset p {
+font-size: x-large;
+color: black;
+}
+
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+margin: 10px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=text] {
+color:  #ccc;
+text-align: left;
+margin-top: 0px;
+}
+
+
+input[type=msg] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit] {
+border: none;
+border-radius: 40px;
+background-color:hsl(172, 100%, 41%);
+color: white;
+padding: 16px 32px;
+text-align: left;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+transition-duration: 0.4s;
+}
+
+.data {
+color: #6c757d;
+}
+
+.msgbox {
+resize: vertical;
+font-family: inherit;
+color: #6c757d;
+width: 100%;
+padding: 12px 20px;
+margin: 10px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.row_group {
+display: inline-block;
+width: 100%;
+}
+
+.row_group > #group1 {
+float: left;
+width: 47%;
+}
+
+.row_group > #group2 {
+float: right;
+width: 47%;
 }
